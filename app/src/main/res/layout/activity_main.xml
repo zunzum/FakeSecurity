@@ -137,7 +137,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/common_btn"
-                android:backgroundTint="#313131"
+                android:backgroundTint="#555555"
                 android:text="기능해제(비콘)"/>
             <Button
                 android:layout_width="0dp"
@@ -148,7 +148,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/common_btn"
-                android:backgroundTint="#313131"
+                android:backgroundTint="#555555"
                 android:text="기능해제(GPS)"/>
         </LinearLayout>
 
