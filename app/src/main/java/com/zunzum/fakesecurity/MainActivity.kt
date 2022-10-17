@@ -11,5 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val animation = AnimationUtils.loadAnimation(this, R.anim.rotate)
         dolgi.startAnimation(animation)
+
+
     }
 }
