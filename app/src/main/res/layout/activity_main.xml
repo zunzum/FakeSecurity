@@ -60,12 +60,19 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:text="설치일시 : 22.06.27 17:32"/>
-            <TextView
-                android:id="@+id/insDayTxt"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:text="차단일시 : 22.10.08 07:30"/>
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/insDayTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="차단일시 : 22.10.08 07:30"/>
+
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
@@ -107,6 +114,7 @@
                 android:layout_gravity="center"
                 android:src="@drawable/progress_circle_2"/>
             <TextView
+                android:id="@+id/chadanTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -115,6 +123,7 @@
                 android:layout_marginTop="50dp"
                 android:textSize="15dp"
                 android:text="2일\n01:05:28"/>
+
         </FrameLayout>
         <TextView
             android:layout_width="match_parent"
