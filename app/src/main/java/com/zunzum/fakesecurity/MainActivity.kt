@@ -1,5 +1,6 @@
 package com.zunzum.fakesecurity
 
+import android.app.Activity
 import android.app.AlertDialog
 import android.app.DatePickerDialog
 import android.content.DialogInterface
@@ -13,6 +14,7 @@ import android.view.Gravity
 import android.view.animation.AnimationUtils
 import android.widget.EditText
 import android.widget.Toast
+import androidx.core.app.ActivityCompat
 import androidx.core.os.postDelayed
 import kotlinx.android.synthetic.main.activity_main.*
 import java.text.SimpleDateFormat
@@ -55,9 +57,9 @@ class MainActivity : AppCompatActivity() {
             val nowTime = Calendar.getInstance().timeInMillis
             val chadanDate = nowTime-inDay
             val chadanDay = chadanDate/(24*60*60*1000)
-            val chadanHour = chadanDate/(60*60*1000)
-            val chadanMin = (chadanDate%(60*60*1000))/(60*1000)
-            val chadanSec = (chadanDate%(60*1000))/1000
+            val chadanHour = "%02d".format(chadanDate/(60*60*1000))
+            val chadanMin = "%02d".format((chadanDate%(60*60*1000))/(60*1000))
+            val chadanSec = "%02d".format((chadanDate%(60*1000))/1000)
 //            val minusTime = dateFormat.format(Date(nowTime-inDay))
 //            Log.d("현재시간", "${upDateFormat.format(Date(nowTime))} / $nowTime")
 //            Log.d("기준시간", "${upDateFormat.format(Date(inDay))} / $inDay")
@@ -75,6 +77,9 @@ class MainActivity : AppCompatActivity() {
             }
         //비콘버튼 누르면 동작
         biconBtn.setOnClickListener {
+            ActivityCompat.finishAffinity(this)
+            System.runFinalization()
+            System.exit(0)
 //            val curTime = upDateFormat.format(Date(cutTime)) //날것의 시간을 date형식으로 받아 형식 지정
 //            val alert = AlertDialog.Builder(this)
 //            alert.setTitle("설정하시겠습니까?")
