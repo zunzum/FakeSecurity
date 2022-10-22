@@ -15,24 +15,20 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/employee"
-            android:layout_marginBottom="30dp"/>
+            android:src="@drawable/employee"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="차단일자 설정(0000-00-00)"/>
-        <EditText
-            android:id="@+id/chadanSetTime"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="datetime"
-            android:hint="날자를 입력해주세요"/>
+            android:layout_marginTop="20dp"
+            android:text="ver 1.0\n 기능해제(비콘) - 차단일시 최근 어플 켠 시간으로\n 차단일시 - 직접 일자 설정하여 수정"
+            />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_gravity="center"
-            android:gravity="center">
+            android:gravity="center"
+            android:layout_marginTop="10dp">
             <Button
                 android:id="@+id/noBtn"
                 android:layout_width="wrap_content"
