@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="차단일시 설정(0000-00-00 00/00)"/>
+            android:text="차단일자 설정(0000-00-00)"/>
         <EditText
             android:id="@+id/chadanSetTime"
             android:layout_width="match_parent"
