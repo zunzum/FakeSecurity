@@ -20,6 +20,7 @@
             android:orientation="horizontal">
             <!--        메뉴 이미지 넣을곳-->
             <ImageView
+                android:id="@+id/menuBtn"
                 android:layout_width="60dp"
                 android:layout_height="30dp"
                 android:scaleType="fitCenter"
