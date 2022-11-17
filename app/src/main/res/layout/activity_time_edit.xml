@@ -22,6 +22,12 @@
             android:layout_marginTop="20dp"
             android:text="ver 1.0\n 실행시키고 아무것도 안해도 됩니다\n 차단일시는 당일 07:30으로 자동설정\n 실행시간 (현재시간-차단일시)\n 기능해제(비콘) 누르면 어플 종료입니다"
             />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="ver 1.1\n 기존 부드러운 애니메이션에서 진품과 유사하게 변경"
+            />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
