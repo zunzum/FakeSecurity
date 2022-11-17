@@ -113,7 +113,7 @@
                 android:layout_width="260dp"
                 android:layout_height="260dp"
                 android:layout_gravity="center"
-                android:src="@drawable/progress_circle_2"/>
+                />
             <TextView
                 android:id="@+id/chadanTime"
                 android:layout_width="wrap_content"

@@ -16,6 +16,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.os.postDelayed
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_main.*
 import java.text.SimpleDateFormat
 import java.time.Instant
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        Glide.with(this).load(R.raw.circle).into(dolgi)
         var insDay = SimpleDateFormat("yyyy-MM-dd").format(Date(System.currentTimeMillis())) //어플 켠 시간 중 연월일까지만 받아오기
         Log.d("확인 어플 켠 시간 연월일","$insDay")
         var inchant = "$insDay 07:30:00" //연월일 + 시간 추가
@@ -49,8 +51,8 @@ class MainActivity : AppCompatActivity() {
         insDayTxt.text = "차단일시 : ${chadan}"
 
 
-        val animation = AnimationUtils.loadAnimation(this, R.anim.rotate) //animation이라는 변수 생성 후 그 안에 anim에 따로 생성해둔 kt파일 불러오기
-        dolgi.startAnimation(animation) //dolgi에 시작애니메이션 넣기
+//        val animation = AnimationUtils.loadAnimation(this, R.anim.rotate) //animation이라는 변수 생성 후 그 안에 anim에 따로 생성해둔 kt파일 불러오기
+//        dolgi.startAnimation(animation) //dolgi에 시작애니메이션 넣기
 
         kotlin.concurrent.timer(period = 1000){
             //1초마다 실행될 블록 백그라운드에서 작업
