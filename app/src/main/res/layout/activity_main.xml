@@ -60,7 +60,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:textSize="25dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="23dp"
                 android:text="설치일시 : 22.06.27 17:32"/>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -71,7 +72,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
-                    android:textSize="25dp"
+                    android:textSize="23dp"
                     android:text="차단일시 : 22.10.08 07:30"/>
 
             </LinearLayout>
